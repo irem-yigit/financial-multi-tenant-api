@@ -56,11 +56,10 @@ financial-multi-tenant-api/
     ```
 3. Create a New Laravel Project in the Current Directory
 
-    ⚠️**Important**:The folder must be empty.
-
     ```bash
     composer create-project laravel/laravel .
     ```
+    ⚠️**Important**:The folder must be empty.
 4. Install dependencies:
 
    ```bash
