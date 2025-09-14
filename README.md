@@ -14,7 +14,7 @@ This project demonstrates how to structure and manage a SaaS-style financial sys
 ---
 
 ## Tech Stack
-- **Framework**: Laravel 11 (PHP 8.4)
+- **Framework**: Laravel 12.28 (PHP 8.4)
 - **Database**: MySQL / PostgreSQL
 - **Multi-tenancy**: stancl/tenancy
 - **Containerization**: Docker (optional)
