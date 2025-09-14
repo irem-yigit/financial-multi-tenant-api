@@ -17,6 +17,7 @@ class AuthController extends Controller
             'tenant_id' => 'required|string',
         ]);
 
+        // Kullanıcı ve tenant doğrulama
         $user = User::where('email', $request->email)
                     ->where('tenant_id', $request->tenant_id)
                     ->first();
@@ -42,7 +43,7 @@ class AuthController extends Controller
 
             $data = json_decode((string) $response->getBody(), true);
 
-            // Tenant ID bilgisini de response'a ekle
+            // Tenant ID bilgisi token ile birlikte döner
             $data['tenant_id'] = $request->tenant_id;
 
             return response()->json($data);
