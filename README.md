@@ -18,6 +18,7 @@ This project demonstrates how to structure and manage a SaaS-style financial sys
 - **Database**: MySQL
 - **Multi-tenancy**: stancl/tenancy
 - **Containerization**: Docker
+- **Search & Filter**: ElasticSearch
 - **Testing**: Postman
 
 ---
