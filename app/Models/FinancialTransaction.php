@@ -2,16 +2,17 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Scout\Searchable;
 
 class FinancialTransaction extends Model
 {
-    use Searchable;
+    use HasFactory, Searchable;
 
     protected $fillable = [
-        'description',
         'amount',
+        'description',
         'transaction_date',
     ];
 }
