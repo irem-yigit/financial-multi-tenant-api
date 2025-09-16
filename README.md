@@ -15,10 +15,10 @@ This project demonstrates how to structure and manage a SaaS-style financial sys
 
 ## Tech Stack
 - **Framework**: Laravel 12.28 (PHP 8.4)
-- **Database**: MySQL / PostgreSQL
+- **Database**: MySQL
 - **Multi-tenancy**: stancl/tenancy
-- **Containerization**: Docker (optional)
-- **Testing**: PHPUnit / Pest
+- **Containerization**: Docker
+- **Testing**: Postman
 
 ---
 
@@ -28,9 +28,14 @@ financial-multi-tenant-api/
   ├── 📁app/
   │───└── 📁Http/
   │───────└──📁Controllers/
+  │──────────└──📁AuthController.php
+  │──────────└──📁Controller.php
   │───────└──📁Models/
-  │───────└──📁Services/
-  │───────└──📁Repositories/         
+  │──────────└──📁User.php
+  │───────└──📁Providers/
+  │──────────└──📁AppServiceProvider.php
+  │──────────└──📁AuthServiceProvider.php
+  │──────────└──📁TenancyServiceProvider.php    
   ├── 📁database/
   │ └── 📁migrations/ # Migrations for all tables
   │ └── 📁seeders/ # Seeders for all tables
