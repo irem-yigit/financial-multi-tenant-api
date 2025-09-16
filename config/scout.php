@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'driver' => env('SCOUT_DRIVER', 'elastic'),
+    'driver' => env('SCOUT_DRIVER', 'database'),
 
     /*
     |--------------------------------------------------------------------------
@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'queue' => env('SCOUT_QUEUE', false),
+    'queue' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -51,9 +51,10 @@ return [
     |
     */
 
-    'elastic' => [
+    'elasticsearch' => [
+        'index' => env('ELASTICSEARCH_INDEX', 'financial_transactions'),
         'hosts' => [
-            env('ELASTICSEARCH_HOST', 'elasticsearch:9200'),
+            env('ELASTICSEARCH_HOST', 'http://localhost:9200'),
         ],
     ],
 
