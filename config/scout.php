@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'driver' => env('SCOUT_DRIVER', 'database'),
+    'driver' => env('SCOUT_DRIVER', 'elastic'),
 
     /*
     |--------------------------------------------------------------------------

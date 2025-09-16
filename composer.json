@@ -10,7 +10,7 @@
         "babenkoivan/elastic-scout-driver": "*",
         "laravel/framework": "^12.0",
         "laravel/passport": "^13.2",
-        "laravel/scout": "*",
+        "laravel/scout": "^10.19",
         "laravel/tinker": "^2.10.1",
         "stancl/tenancy": "^3.9"
     },
