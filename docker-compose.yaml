@@ -11,10 +11,13 @@ services:
       - "8000:8000"
     depends_on:
       - db
+      - elasticsearch
     command: sh -c "composer install &&
                     php artisan key:generate &&
                     php artisan migrate --seed &&
                     php artisan serve --host=0.0.0.0 --port=8000"
+    networks:
+      - laravel_net
 
   db:
     image: mysql:8.0
@@ -27,6 +30,8 @@ services:
       - "3306:3306"
     volumes:
       - dbdata:/var/lib/mysql
+    networks:
+      - laravel_net
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.9.0
@@ -43,6 +48,12 @@ services:
       interval: 10s
       timeout: 10s
       retries: 5
+    networks:
+      - laravel_net
 
 volumes:
   dbdata:
+
+networks:
+  laravel_net:
+    driver: bridge

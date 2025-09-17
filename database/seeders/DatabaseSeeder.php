@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Tenant User',
             'email' => 'tenant1@example.com',
             'password' => Hash::make('12345678'),
-            'tenant_id' => 'tenant1',
+            'tenant_id' => 't1',
         ]);
 
         // Test tenant user 2
@@ -27,7 +27,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Tenant User 2',
             'email' => 'tenant2@example.com',
             'password' => Hash::make('12345678'),
-            'tenant_id' => 'tenant2',
+            'tenant_id' => 't2',
         ]);
     }
 }

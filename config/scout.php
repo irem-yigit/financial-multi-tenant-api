@@ -54,7 +54,7 @@ return [
     'elastic' => [
         'index' => env('ELASTICSEARCH_INDEX', 'financial_transactions'),
         'hosts' => [
-            env('ELASTICSEARCH_HOSTS', 'http://localhost:9200'),
+            env('ELASTICSEARCH_HOSTS', 'http://elasticsearch:9200'),
         ],
     ],
 

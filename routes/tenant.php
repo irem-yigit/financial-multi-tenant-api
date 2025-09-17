@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 use Stancl\Tenancy\Middleware\InitializeTenancyByRequestData;
 use Stancl\Tenancy\Middleware\PreventAccessFromCentralDomains;
@@ -29,4 +30,6 @@ Route::middleware([
             'current_tenant_id' => tenant('id'),
         ]);
     });
+    //Route::post('/login', [AuthController::class, 'login']);
+
 });

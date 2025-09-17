@@ -114,3 +114,5 @@ financial-multi-tenant-api/
 
 This project is licensed under the MIT License
 .
+
+---
