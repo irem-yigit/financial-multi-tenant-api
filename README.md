@@ -1,6 +1,6 @@
 # Financial Multi-Tenant API
 
-This project demonstrates how to structure and manage a SaaS-style financial system where multiple tenants (companies, users, or organizations) can use the same application with isolated data.
+This project demonstrates how to structure and manage a SaaS-style financial system where multiple tenants can use the same application with isolated data.
 
 ---
 
